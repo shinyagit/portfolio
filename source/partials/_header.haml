@@ -1,6 +1,6 @@
 %header#header
-  %h2 #header
-  %p 100%x60px
+  #brand
+    SHINYA KUNISADA
 
 #drw-btn
   %span.icon-bar
@@ -8,9 +8,8 @@
   %span.icon-bar
 %nav#nav-menu
   %ul
-    %li= link_to 'top', '/'
-    %li= link_to 'about', '/'
-    %li= link_to 'gallery', '/'
-    %li= link_to 'contact', '/'
+    %li= link_to "PROFILE", "#{config[:root]}/contents/profile/"
+    %li= link_to "WORKS", "#{config[:root]}/contents/works/"
+    %li= link_to 'CONTACT', "#{config[:root]}/contents/contact/"
 
 #drw-layer

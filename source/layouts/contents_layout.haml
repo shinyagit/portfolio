@@ -19,7 +19,7 @@
     -# %meta{property: 'fb:app_id', content: ''}
     -# %meta{content: 'summary' name: 'twitter:card'}
     -# %meta{content: '@twitter_acount' name: 'twitter:site'}
-    %title= current_page.data.title + ' | サイト名' || 'サイト名'
+    %title= current_page.data.title + ' | SHINYA KUNISADA' || 'SHINYA KUNISADA'
     -# import css files
     = stylesheet_link_tag 'reset'
     = stylesheet_link_tag 'base'
@@ -30,9 +30,10 @@
     -# favicon の一括生成はこちらから https://ao-system.net/favicon/
     -# html to haml http://htmltohaml.com/
   %body
-    = partial 'partials/header'
-    = yield
-    = partial 'partials/footer'
+    #wrapper
+      = partial 'partials/header'
+      = yield
+      = partial 'partials/footer'
 
     -# if it IE 9
     -# %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"}
