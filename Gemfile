@@ -9,4 +9,4 @@ gem 'middleman-minify-html'
 gem 'middleman-livereload'
 
 gem 'haml'
-# gem "middleman-deploy"
+gem "middleman-deploy"

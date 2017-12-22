@@ -49,22 +49,22 @@ configure :build do
   activate :minify_html
   activate :minify_css
   activate :minify_javascript
-  config[:root] = "/"
-
+  # config[:root] = "/"
+  #
   # リポジトリ名を host に設定しておく
   # こうすることで stylesheet_link_tag などで展開されるパスが
   # /test-middleman/stylesheets/normalize.css
   # のようになる
-  # activate :asset_host, :host => "/your_repository_name"
+  activate :asset_host, :host => "/portfolio"
   # これは必要か不明
-  # set :relative_links, true
+  set :relative_links, true
 end
 
 
 # デプロイの設定
 # 今回は gh-pages を使用するので branch に 'gh-pages' を設定する
-# activate :deploy do |deploy|
-#   deploy.build_before = true
-#   deploy.deploy_method = :git
-#   deploy.branch = 'gh-pages'
-# end
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+  deploy.branch = 'gh-pages'
+end
