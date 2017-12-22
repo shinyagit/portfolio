@@ -29,7 +29,7 @@ $(document).ready(function(){
       state = false;
     }
     // $(this).toggleClass('open');
-    $("#nav-menu").toggleClass('slide-in');
+    $("#nav-menu, #contents-wrapper #nav-menu").toggleClass('slide-in');
     $("#drw-layer").toggleClass('cover');
   });
 });

@@ -28,6 +28,7 @@
     -# favicon の一括生成はこちらから https://ao-system.net/favicon/
     -# html to haml http://htmltohaml.com/
   %body
+    #nowloading
     #wrapper
       = partial 'partials/header'
       = yield
@@ -41,3 +42,12 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
     -# import javascript files
     = javascript_include_tag 'site'
+    %script{:type => "text/javascript"}
+      window.onload = function() {
+      setTimeout("show()", 2500);
+      }
+
+      function show() {
+      document.getElementById("nowloading").style.display = none;
+      document.getElementById("wrapper").style.display = block;
+      }
