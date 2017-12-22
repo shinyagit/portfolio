@@ -25,6 +25,7 @@
     = stylesheet_link_tag 'base'
     = stylesheet_link_tag 'partials'
     = stylesheet_link_tag 'site'
+    %link{:href => "https://fonts.googleapis.com/css?family=Kaushan+Script", :rel => "stylesheet"}
     -# favicon の一括生成はこちらから https://ao-system.net/favicon/
     -# html to haml http://htmltohaml.com/
   %body
@@ -38,6 +39,8 @@
     -# %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"}
     -# else if
 
+    -# fontawesome
+    %script{:src => "https://use.fontawesome.com/b001c86902.js"}
     -# import jquery
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
     -# import javascript files

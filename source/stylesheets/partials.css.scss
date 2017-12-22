@@ -22,7 +22,7 @@
   font-size: 30px;
   font-weight: bold;
   padding-left: 15px;
-  font-family: fantasy;
+  font-family: 'Kaushan Script', cursive, fantasy;
 
   a {
     color: #333;
@@ -59,7 +59,7 @@
       color: #333;
       text-decoration: none;
       letter-spacing: 0.1em;
-      font-family: fantasy;
+      font-family: 'Kaushan Script', cursive, fantasy;
     }
   }
 }
@@ -83,10 +83,11 @@
 
     a {
       display: block;
-      width: 100px;
+      width: 90px;
+      height: 30px;
       text-align: center;
       margin: 21px 0;
-      padding: 0 10px;
+      padding: 0 5px;
       line-height: 2;
       font-size: 14px;
       font-weight: bold;
@@ -94,7 +95,7 @@
       text-align: center;
       text-decoration: none;
       letter-spacing: 0.1em;
-      font-family: fantasy;
+      font-family: 'Kaushan Script', cursive, fantasy;
     }
   }
 }
@@ -141,15 +142,15 @@
 
     .icon-bar {
       display: block;
-      width: 32px;
+      width: 24px;
       height: 3px;
-      border-radius: 2px;
-      margin-bottom: 7px;
+      border-radius: 1px;
+      margin-bottom: 5px;
       background-color: #333;
       transition: all 0.3s ease;
 
       &:first-of-type {
-        margin-top: 14px;
+        margin-top: 18px;
       }
     }
   }
@@ -161,11 +162,11 @@
 
     .icon-bar:first-child {
       transition: all 0.3s ease;
-      transform: translate(0, 10px) rotate(45deg);
+      transform: translate(0, 8px) rotate(45deg);
     }
     .icon-bar:nth-child(3) {
       transition: all 0.3s ease;
-      transform: translate(0, -10px) rotate(-45deg);
+      transform: translate(0, -8px) rotate(-45deg);
     }
     .icon-bar:nth-child(2) {
       transition: all 0.2s ease;
